@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delish Kitchen — Fresh. Local. Seasonal.</title>
+  <meta name="description" content="Delish Kitchen is a modern restaurant serving fresh, seasonal dishes. Reserve a table or order for pickup." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">🍽️</span>
+        <span class="brand-name">Delish Kitchen</span>
+      </a>
+
+      <!-- Mobile nav toggle (CSS-only) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu" />
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+          <li><a class="btn btn--small" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" role="banner" aria-label="Restaurant hero section">
+    <div class="container hero-inner">
+      <h1>Fresh. Local. Seasonal.</h1>
+      <p>Thoughtfully crafted dishes made from locally sourced ingredients.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#menu">View Menu</a>
+        <a class="btn btn--ghost" href="#reserve">Book a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container grid two-col">
+        <div>
+          <h2>About Us</h2>
+          <p>
+            At <strong>Delish Kitchen</strong>, we celebrate flavor. Our chefs design
+            a seasonal menu that highlights the best produce from local farms and
+            sustainable suppliers. Join us for a cozy dine-in experience or order
+            your favorites to go.
+          </p>
+          <ul class="highlights">
+            <li>Farm-to-table ingredients</li>
+            <li>Vegetarian & gluten-free options</li>
+            <li>Hand-crafted desserts</li>
+          </ul>
+        </div>
+        <div class="about-card" aria-hidden="true">
+          <div class="about-stat">
+            <span class="stat-num">2018</span>
+            <span class="stat-label">Founded</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num">120+</span>
+            <span class="stat-label">5★ Reviews</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num">7am–10pm</span>
+            <span class="stat-label">Open Daily</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specials Banner -->
+    <section class="specials" aria-label="Current specials">
+      <div class="container specials-inner">
+        <p class="kicker">This Week Only</p>
+        <h3>Chef’s Tasting Menu</h3>
+        <p>Four courses • Complimentary mocktail • KES 2,500 pp</p>
+        <a class="btn btn--small" href="#reserve">Reserve Your Seat</a>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="section">
+      <div class="container">
+        <h2>Our Menu</h2>
+
+        <div class="menu-grid">
+          <!-- Starters -->
+          <article class="menu-card">
+            <h3>Starters</h3>
+            <ul class="menu-list">
+              <li>
+                <div>
+                  <span class="item-name">Roasted Pumpkin Soup</span>
+                  <span class="item-desc">Toasted seeds, herb oil</span>
+                </div>
+                <span class="item-price">KES 480</span>
+              </li>
+              <li>
+                <div>
+                  <span class="item-name">Crispy Cauliflower</span>
+                  <span class="item-desc">Smoked paprika, lemon aioli</span>
+                </div>
+                <span class="item-price">KES 590</span>
+              </li>
+              <li>
+                <div>
+                  <span class="item-name">Bruschetta</span>
+                  <span class="item-desc">Heirloom tomatoes, basil, balsamic</span>
+                </div>
+                <span class="item-price">KES 520</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Mains -->
+          <article class="menu-card">
+            <h3>Mains</h3>
+            <ul class="menu-list">
+              <li>
+                <div>
+                  <span class="item-name">Grilled Tilapia</span>
+                  <span class="item-desc">Coconut rice, mango salsa</span>
+                </div>
+                <span class="item-price">KES 1,350</span>
+              </li>
+              <li>
+                <div>
+                  <span class="item-name">Herb Chicken</span>
+                  <span class="item-desc">Garlic mash, pan jus</span>
+                </div>
+                <span class="item-price">KES 1,280</span>
+              </li>
+              <li>
+                <div>
+                  <span class="item-name">Veggie Pasta</span>
+                  <span class="item-desc">Roasted veg, pesto, parmesan</span>
+                </div>
+                <span class="item-price">KES 1,050</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Desserts -->
+          <article class="menu-card">
+            <h3>Desserts</h3>
+            <ul class="menu-list">
+              <li>
+                <div>
+                  <span class="item-name">Chocolate Fondant</span>
+                  <span class="item-desc">Vanilla ice cream</span>
+                </div>
+                <span class="item-price">KES 580</span>
+              </li>
+              <li>
+                <div>
+                  <span class="item-name">Lemon Cheesecake</span>
+                  <span class="item-desc">Berry coulis</span>
+                </div>
+                <span class="item-price">KES 560</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Drinks -->
+          <article class="menu-card">
+            <h3>Drinks</h3>
+            <ul class="menu-list">
+              <li>
+                <div>
+                  <span class="item-name">House Lemonade</span>
+                  <span class="item-desc">Fresh mint</span>
+                </div>
+                <span class="item-price">KES 250</span>
+              </li>
+              <li>
+                <div>
+                  <span class="item-name">Iced Coffee</span>
+                  <span class="item-desc">Cold brew, milk</span>
+                </div>
+                <span class="item-price">KES 300</span>
+              </li>
+              <li>
+                <div>
+                  <span class="item-name">Ginger Tea</span>
+                  <span class="item-desc">Local honey</span>
+                </div>
+                <span class="item-price">KES 220</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+<!-- Gallery -->
+<section id="gallery" class="section">
+  <div class="container">
+    <h2>Gallery</h2>
+    <div class="gallery-grid" role="list">
+      <!-- Signature Pasta -->
+      <figure role="listitem">
+        <img src="Signature Pasta.jpg" alt="Signature pasta dish" />
+        <figcaption>
+          <strong>Signature Pasta</strong>
+          <p>Fresh homemade pasta tossed in a creamy tomato sauce with basil.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Grilled Tilapia -->
+      <figure role="listitem">
+        <img src="Grilled Tilapia.jpg" alt="Grilled fish with mango salsa" />
+        <figcaption>
+          <strong>Grilled Tilapia</strong>
+          <p>Perfectly grilled tilapia served with coconut rice and mango salsa.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Chocolate Fondant -->
+      <figure role="listitem">
+        <img src="Chocolate Fondant.jpg" alt="Chocolate dessert with ice cream" />
+        <figcaption>
+          <strong>Chocolate Fondant</strong>
+          <p>Rich molten chocolate cake paired with vanilla ice cream.</p>
+        </figcaption>
+      </figure>
+
+      <!-- Pilau -->
+      <figure role="listitem">
+        <img src="Pilau.jpg" alt="Pilau" />
+        <figcaption>
+          <strong>Pilau</strong>
+          <p>Traditional spiced rice dish served with tender beef and vegetables.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+    <!-- Reserve -->
+    <section id="reserve" class="section">
+      <div class="container">
+        <h2>Reserve a Table</h2>
+        <form class="reserve-form" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required />
+          </div>
+          <div class="form-row">
+            <label for="date">Date</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+          <div class="form-row">
+            <label for="time">Time</label>
+            <input id="time" name="time" type="time" required />
+          </div>
+          <div class="form-row">
+            <label for="guests">Guests</label>
+            <input id="guests" name="guests" type="number" min="1" max="20" value="2" required />
+          </div>
+          <div class="form-row">
+            <label for="notes">Notes (optional)</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Allergies, occasion, seating preference…"></textarea>
+          </div>
+          <button class="btn" type="submit">Send Request</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container grid two-col">
+        <div>
+          <h2>Contact & Hours</h2>
+          <p><strong>Address:</strong> 123 Market Street, Nairobi</p>
+          <p><strong>Phone:</strong> +254 700 000 000</p>
+          <p><strong>Email:</strong> hello@delishkitchen.example</p>
+        </div>
+        <div class="hours">
+          <h3>Open Hours</h3>
+          <ul>
+            <li>Mon–Thu: 7:00–22:00</li>
+            <li>Fri–Sat: 7:00–23:00</li>
+            <li>Sun: 8:00–21:00</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2025</span> Delish Kitchen. All rights reserved.</p>
+      <ul class="social">
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="TikTok">TikTok</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
